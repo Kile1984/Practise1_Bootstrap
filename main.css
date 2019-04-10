@@ -1,0 +1,367 @@
+
+body{
+     font-family: myriad;
+}
+@font-face{
+    font-family: myriad;
+    src: url(fonts/MyriadProRegular.ttf);
+}@font-face{
+    font-family: myriadLight;
+    src: url(fonts/MyriadProLight.otf);
+}
+.wrapp{
+    margin: 40px;
+}
+.fontSpan{
+  font-family: myriadLight;
+  font-weight: 100;
+}
+.paragrafSpan{
+    display: block;  
+}
+h1{
+    font-size: 60px;
+    font-weight: 900;
+    color: #000;
+}
+p{
+    font-size: 18px;
+    font-style: italic;
+}
+
+/*-----nav-----*/
+.spanOpenBtn{
+    font-size: 30px;
+    cursor:pointer;
+    float:right;
+    padding: 40px;
+    color: #000;
+}
+.spanOpenBtn:hover{
+    color: #000;
+    text-decoration: none;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    background-color: #000;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;;
+    display: block;
+}
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+.sidenav .closebtn {
+    font-size: 36px;
+    margin-left: 50px;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+}
+.sidenav:target{
+    width: 250px;
+}
+/*-----/nav-----*/
+
+/*-----header-----*/
+.header{
+    background: url("img/Slika1.jpg") no-repeat;
+    background-size: cover;
+}
+.header-content{
+    padding: 200px 0;
+}
+/*-----header-----*/
+
+/*-----social-----*/
+div .social{
+    background: #efefef;
+    padding: 100px 0;
+}
+.social-content h1{
+    text-align: right;
+    padding-right: 25px;
+}
+.social-content p{
+    padding-left: 20px;
+}
+.social-img img{
+    width: 100%;
+}
+.social-icon{
+    padding-left: 30px;
+}
+.social-icon i{
+    font-size: 22px;
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    background: #000;
+    padding: 7px 0 5px 9px;
+    margin: 50px 15px 0 0;
+    cursor: pointer;
+}
+.social-icon i:hover{
+    opacity: 0.8;
+}
+/*-----/social-----*//*-----slider-center-----*/
+.slider-img{
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+}
+.slider-img img{
+    width: 100%;
+}
+/*-----/slider-center-----*/
+
+/*-----after-slider-----*/
+.after-slider-container{
+    background: #efefef;
+}
+.after-slider-content{
+    padding: 150px 0;
+}
+.after-slider-content p{
+    padding-right: 10px;
+}
+.after-slider-img{
+    padding: 0;
+}
+.after-slider-img img {
+    width: 100%;
+    position: absolute;
+}
+/*-----/after-slider-----*/
+
+/*-----slider-bottom-----*/
+
+.slider-bottom{
+    background: #efefef; 
+}
+.wrapp{
+    position: relative;
+}
+.slider-bottom-img1{
+   text-align: left;
+   padding: 221px 0;
+}
+.slider-bottom-img2{
+   text-align: right;
+   left: 35px;
+   padding: 107px 0;
+}
+.slider-bottom-img3{
+    position: absolute;
+    text-align: center;
+    top: 140px;
+}
+.slider-bottom-img1 img{
+    width: 80%;
+}
+.slider-bottom-img2 img{
+    width: 67%;
+}
+.slider-bottom-img3 img{
+    width: 48%;
+}
+/*-----/slider-bottom-----*/
+
+/*-----contact & form-----*/
+.contact{
+    background: #efefef;
+    text-align: center;
+    padding: 80px 0;
+}
+.contact p{
+    padding: 25px 0 100px;
+}
+.form-control{
+    font-size: 18px;
+    height: 40px;
+    background: transparent;
+    border-radius: 0;
+    border: 1px solid #000;
+}
+.my-form-btn{
+    padding: 0;
+}
+.my-form-btn button{
+    font-size: 18px;
+    width: 100%;
+    background: #000;
+    padding: 10px 0;
+    border: none;
+    border-radius: 0;
+}
+.my-form-btn button:hover{
+    background: rgba(0, 0, 0, 0.8);
+}
+.btn-primary:active{
+    background: rgb(0, 0, 0);
+}
+.btn-primary:active:hover{
+    background: rgba(0, 0, 0, 0.8);
+}
+.form-control:focus{
+    border-color: rgba(0, 0, 0, 0.8);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.7), 0 0 8px rgba(0,0,0,.6);
+}
+input[type="email"]::placeholder, input[type="subject"]::placeholder, textarea[type="message"]::placeholder{
+    color: #000;
+}
+/*-----/contact & form-----*/
+
+/*320px-767px*/
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    h1{
+        font-size: 40px;
+        text-align: left;
+    }
+    .wrapp{
+        margin: 15px;
+    }
+    .after-slider-container, .after-slider-content, .header-content, .social-img, .spanOpenBtn {
+        padding: 25px 0;
+    }
+    .social-content p, .contact, .contact p {
+        padding: 0;
+    }
+    .slider-bottom-img1 img, .slider-bottom-img2 img, .slider-bottom-img3 img{
+        width: 100%;
+        padding: 25px 0 25px 0;
+    }
+    .slider-bottom-img1 {
+        text-align: center;
+        padding: 0; 
+    }
+    .slider-bottom-img2 {
+        text-align: center;
+        left: 0; 
+        padding: 0; 
+    }
+    .slider-bottom-img3 {
+        position: static; 
+        text-align: center;
+        padding: 0; 
+    }
+    .social-img{
+        text-align: center;
+    }
+    .social-img img{
+        width: 65%;
+    }
+    .social-content{
+        padding: 10px 10px;
+    }
+    .social-content h1{
+        text-align: left;
+    }
+    .social-icon{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    .social-icon i {
+        font-size: 18px;
+        width: 30px;
+        height: 30px;
+        margin: 0;
+        padding: 7px 5px 0px 8px;
+    }
+    .contact-text, div .social {
+         padding: 25px 0;
+    }
+    .contact-text h1{
+        text-align: center;
+    }
+    .form-container{
+        padding: 0;
+    }
+    .form-control, .my-form-btn button{
+        font-size: 14px;
+    }
+    .form-control{
+        height: 30px;
+    }
+    textarea.form-control {
+    height: 80px;
+    }
+}
+/*768px-990px*/
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    .wrapp{
+        margin: 25px;
+    }
+    .container{
+        width: 100%;
+    }
+    .header-content{
+        padding: 80px 0;
+    }
+    div .social, .after-slider-content, .after-slider-container, .slider-bottom, .contact{
+        padding: 25px 0;
+    }
+    .slider-bottom-img1 {
+        text-align: center;
+        padding: 0; 
+    }
+    .slider-bottom-img1 img, .slider-bottom-img2 img, .slider-bottom-img3 img{
+        width: 100%;
+         padding: 25px 15px;
+    }
+    .slider-bottom-img2 {
+        text-align: center;
+        left: 0; 
+        padding: 0; 
+    }
+    .slider-bottom-img3 {
+        position: static; 
+        text-align: center;
+        padding: 0; 
+    }
+    .social-icon{
+        text-align: center;
+        margin: 0;
+    }
+    .social-icon i{
+        padding: 7px 5px 5px 8px;
+    }
+    .social-img{
+        text-align: center;
+    }
+     .social-content h1{
+        text-align: right;
+     }
+    .social-img img{
+        width: 70%;
+        padding: 0;
+    }
+
+    .form-container{
+        padding: 0;
+    }
+}
+
+/*max-1400px*/
+@media only screen and (max-width: 1400px){
+    .container{
+    width: 100%;
+    }
+    .after-slider-img img {
+    position: static;
+    }
+}
